@@ -1,7 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { getMovies } from '../services/movies';
-import {View, Text, FlatList} from "react-native";
-import {Card, Icon, Button, Rating} from 'react-native-elements';
+import {View, FlatList} from "react-native";
+import {Card, Text, Button, Rating} from 'react-native-elements';
+import {ThemeProvider} from "@react-navigation/native";
+
+const theme = {
+    Button: {
+        titleStyle: {
+            color: 'red',
+        },
+    },
+};
 
 export function List({navigation}) {
     const [list, setList] = useState([]);
@@ -21,13 +30,7 @@ export function List({navigation}) {
 
     return(
             <View className="wrapper">
-                <Text>Liste des films</Text>
-                <Button
-                    title="go to home"
-                    onPress={() => {
-                        navigation.navigate("Login");
-                    }}
-                />
+                <Text h2>Ma liste de films</Text>
                 <FlatList
                     data={list}
                     keyExtractor={item => item.id.toString()}
@@ -37,19 +40,14 @@ export function List({navigation}) {
                                 <Card.Title>{item.title}</Card.Title>
                                 <Card.Divider/>
                                 <Card.Image source={{ uri: item.image }}>
-                                    <Text style={{marginBottom: 10}}>
-                                        {item.description}
-                                    </Text>
                                 </Card.Image>
-                                <Text style={{textAlign:'center',marginTop:'5%'}}>
+                                <Text>
                                     <Rating imageSize={20} readonly startingValue={item.rating}/>
                                 </Text>
                                 <Button
-                                    icon={<Icon name='code' color='#ffffff' />}
-                                    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                                    buttonStyle={{backgroundColor: '#E7414D',borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                                     title='En savoir plus'
                                     onPress={() => {
-                                        /* 1. Navigate to the Details route with params */
                                         navigation.navigate('Movie', {
                                             movie: item
                                         });

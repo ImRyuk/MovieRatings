@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="905fc8df-6e6b-4d86-a4d2-f2528450535c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/Movie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/NewMovie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SearchMovie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/List.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Movie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/NewMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/NewMovie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +48,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620224521116</updated>
-      <workItem from="1620224522832" duration="16238000" />
+      <workItem from="1620224522832" duration="16392000" />
+      <workItem from="1620297164448" duration="904000" />
+      <workItem from="1620316820046" duration="6248000" />
     </task>
     <servers />
   </component>
@@ -67,5 +67,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -1,26 +1,19 @@
 import React from 'react';
 import {List} from "./src/views/List";
-//import {Movie} from "./src/views/Movie";
+import {Movie} from "./src/views/Movie";
 import {NewMovie} from "./src/views/NewMovie";
 import {SearchMovie} from "./src/views/SearchMovie";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Card, ListItem, Button, Icon } from 'react-native-elements'
+import { Button } from 'react-native-elements'
 
 import { Text, View, Image} from "react-native";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 const Stack = createStackNavigator();
 
-const Movie = ({route, navigation}) => {
-    const { movie } = route.params;
-    return (
-        <View>
-            <Text>{movie.title}</Text>
-        </View>
-    );
-};
 
 const Login = ({ navigation, route }) => {
     return (
@@ -38,10 +31,36 @@ const Login = ({ navigation, route }) => {
 
 function Home() {
     return(
-        <Tab.Navigator>
-            <Tab.Screen name="List" component={List}/>
-            <Tab.Screen name="NewMovie" component={NewMovie} />
-            <Tab.Screen name="SearchMovie" component={SearchMovie} />
+        <Tab.Navigator
+            tabBarOptions={{
+                activeTintColor: '#E7414D',
+                inactiveTintColor: 'gray',
+            }}
+        >
+            <Tab.Screen
+                options={{
+                    tabBarLabel: 'Ma Liste',
+                    tabBarIcon: ({ color, size }) => (
+                        <MaterialCommunityIcons name="home" color={color} size={size} />
+                    )}}
+                name="List"
+                component={List}/>
+            <Tab.Screen
+                options={{
+                tabBarLabel: 'Chercher un film',
+                tabBarIcon: ({ color, size }) => (
+                    <MaterialCommunityIcons name="magnify" color={color} size={size} />
+                )}}
+                name="SearchMovie"
+                component={SearchMovie} />
+            <Tab.Screen
+                options={{
+                tabBarLabel: 'Ajouter un film',
+                tabBarIcon: ({ color, size }) => (
+                    <MaterialCommunityIcons name="plus" color={color} size={size} />
+                )}}
+                name="NewMovie"
+                component={NewMovie} />
         </Tab.Navigator>);}
 
 const Tab = createBottomTabNavigator();
@@ -54,15 +73,44 @@ export default function App() {
                 <Stack.Screen
                     name="Login"
                     component={Login}
+                    options={{
+                        title: 'Se connecter',
+                        headerStyle: {
+                            backgroundColor: '#1E375A',
+                        },
+                        headerTintColor: '#fff',
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                    }}
                 />
                 <Stack.Screen
                     name="Home"
                     component={Home}
+                    options={{
+                        title: 'Accueil',
+                        headerStyle: {
+                            backgroundColor: '#1E375A',
+                        },
+                        headerTintColor: '#fff',
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                    }}
                 />
                 <Stack.Screen
                     name="Movie"
                     component={Movie}
-                    initialParams={{ previousPage: "no previous page" }}
+                    options={{
+                        title: 'Voir un film',
+                        headerStyle: {
+                            backgroundColor: '#1E375A',
+                        },
+                        headerTintColor: '#fff',
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                    }}
                 />
             </Stack.Navigator>
         </NavigationContainer>
