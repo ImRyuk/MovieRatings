@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="905fc8df-6e6b-4d86-a4d2-f2528450535c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/views/SearchCompo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/SearchComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/SearchedList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/SearchedMovie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/movies.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Movie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/NewMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/NewMovie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SearchMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SearchMovie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +36,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Pomodoro2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -51,6 +57,10 @@
       <workItem from="1620224522832" duration="16392000" />
       <workItem from="1620297164448" duration="904000" />
       <workItem from="1620316820046" duration="6248000" />
+      <workItem from="1620403733346" duration="334000" />
+      <workItem from="1620472957130" duration="5881000" />
+      <workItem from="1620486492861" duration="3879000" />
+      <workItem from="1620495349549" duration="631000" />
     </task>
     <servers />
   </component>
@@ -68,5 +78,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="538" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1620473507760">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="538" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1620473507760" />
   </component>
 </project>

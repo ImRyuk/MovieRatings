@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { getMovies } from '../services/movies';
 import {View, FlatList} from "react-native";
 import {Card, Text, Button, Rating} from 'react-native-elements';
-import {ThemeProvider} from "@react-navigation/native";
 
 const theme = {
     Button: {

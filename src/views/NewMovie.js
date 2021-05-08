@@ -8,8 +8,10 @@ export function NewMovie() {
     const { control, handleSubmit } = useForm();
 
     const Input = ({name, control, placeholder}) => {
+
         const {field} = useController({
             control,
+            rules: { required: true },
             defaultValue: '',
             name,
         })
@@ -28,6 +30,7 @@ export function NewMovie() {
 
         const {field} = useController({
             control,
+            rules: { required: {value: true, message: 'required'} },
             defaultValue: '',
             name,
         })
@@ -36,17 +39,19 @@ export function NewMovie() {
                 placeholder="Note/5"
                 value={field.value}
                 onChangeText={field.onChange}
+
                 keyboardType='numeric'
                 maxLength={1}
                 selectionColor='#477FA2'
                 style={styles.textInput}
             />
+
         );
     };
 
     const onSubmit = (e) => {
-        console.log(e);
         setMovie(e);
+        alert("Le film " + JSON.stringify(e.Title) + " a bien été ajouté!");
     };
 
     return(

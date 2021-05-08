@@ -2,7 +2,6 @@ import React from 'react';
 import {List} from "./src/views/List";
 import {Movie} from "./src/views/Movie";
 import {NewMovie} from "./src/views/NewMovie";
-import {SearchMovie} from "./src/views/SearchMovie";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -11,6 +10,8 @@ import { Button } from 'react-native-elements'
 
 import { Text, View, Image} from "react-native";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+//import SearchMovie from "./src/views/SearchMovie";
+import SearchComponent from "./src/views/SearchComponent";
 
 const Stack = createStackNavigator();
 
@@ -52,7 +53,7 @@ function Home() {
                     <MaterialCommunityIcons name="magnify" color={color} size={size} />
                 )}}
                 name="SearchMovie"
-                component={SearchMovie} />
+                component={SearchComponent} />
             <Tab.Screen
                 options={{
                 tabBarLabel: 'Ajouter un film',

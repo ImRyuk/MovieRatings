@@ -42,22 +42,6 @@
         "Rating": ""
       },
       "id": 8
-    },
-    {
-      "movie": {
-        "Title": "Cg",
-        "Desc": "Jy",
-        "Rating": "2"
-      },
-      "id": 11
-    },
-    {
-      "movie": {
-        "Title": "",
-        "Desc": "",
-        "Rating": ""
-      },
-      "id": 12
     }
   ]
 }
