@@ -1,7 +1,7 @@
 # MovieRatings App
 
-In order to use the local api, you must start the api server with the command line:
->json-server --host {IPADRESS} db.json
+In order to use the local api, you must install the json-server bundle and start the api server with the command line:
+>json-server --host {YOURIPADRESS} db.json
 
 And also start the application by using 
 >expo start
