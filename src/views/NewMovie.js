@@ -36,14 +36,14 @@ export function NewMovie() {
         })
         return (
             <TextInput
-                placeholder="Note/5"
+                placeholder="Note/10"
                 value={field.value}
                 onChangeText={field.onChange}
-
                 keyboardType='numeric'
                 maxLength={1}
                 selectionColor='#477FA2'
                 style={styles.textInput}
+                error="La note ne peut pas être supérieure à 10!"
             />
 
         );

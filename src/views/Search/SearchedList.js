@@ -3,9 +3,8 @@ import {View, Text, Image, FlatList} from "react-native";
 import {Button, Card, Rating} from "react-native-elements";
 
 
-class SearchedList extends React.Component {
-    render() {
-        const {movies} = this.props;
+function SearchedList (props) {
+    const {movies} = props;
         return (
             <View className="movies">
                 <Text h2>Ma liste de films</Text>
@@ -33,6 +32,5 @@ class SearchedList extends React.Component {
                 />
             </View>
         )
-    }
 }
 export default SearchedList;

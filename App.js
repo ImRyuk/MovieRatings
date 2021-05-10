@@ -10,7 +10,7 @@ import { Button } from 'react-native-elements'
 
 import { Text, View} from "react-native";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import SearchComponent from "./src/views/SearchComponent";
+import SearchComponent from "./src/views/Search/SearchComponent";
 
 const Stack = createStackNavigator();
 

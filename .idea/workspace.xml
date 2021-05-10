@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="905fc8df-6e6b-4d86-a4d2-f2528450535c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/conf.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/SearchComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SearchComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/SearchMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SearchMovie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Movie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/NewMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/NewMovie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SearchCompo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SearchComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Search/SearchComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SearchMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Search/SearchMovie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SearchedList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Search/SearchedList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SearchedMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Search/SearchedMovie.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +40,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\Licence\MovieRatings\src\views\Search" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\laragon\www\Licence\ReactNative\MovieRatings2" />
     </key>
@@ -56,7 +62,7 @@
       <workItem from="1620472957130" duration="5881000" />
       <workItem from="1620486492861" duration="3879000" />
       <workItem from="1620495349549" duration="7614000" />
-      <workItem from="1620629938306" duration="4784000" />
+      <workItem from="1620629938306" duration="8049000" />
     </task>
     <servers />
   </component>
