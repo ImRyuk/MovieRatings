@@ -1,29 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {View, Button, TextInput} from "react-native";
 
-class Search extends React.Component {
-    state= {
-        title: ''
+export function Search(props) {
+    const [title, setTitle] = useState('');
+
+    const handleSubmit = () => {
+        props.handleSendRequest(title)
+        setTitle(title)
     }
-    handleSubmit = () => {
-        const {title} = this.state;
-        this.props.handleSendRequest(title)
-        this.setState({title: ''})
-    }
-    handleInputTitle = (event) => {
+    const handleInputTitle = (event) => {
+        console.log(event.value);
         console.log(event.target.value);
         event.preventDefault();
         const title = event.target.value;
-        this.setState({title});
+        setTitle(title);
     }
-    render() {
-        const {title} = this.state;
-        return (
+    return (
             <View className="search">
-                <TextInput className="search-box" type="text" onChange={this.handleInputTitle} value={title}/>
-                <Button className="button" type="submit" onPress={this.handleSubmit} title="Search"/>
+                <TextInput className="search-box" type="text" onChangeText={title => setTitle(title)} value={title}/>
+                <Button className="button" type="submit" onPress={handleSubmit} title="Search"/>
             </View>
         )
-    }
 }
 export default Search;

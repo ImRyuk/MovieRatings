@@ -8,9 +8,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Button } from 'react-native-elements'
 
-import { Text, View, Image} from "react-native";
+import { Text, View} from "react-native";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-//import SearchMovie from "./src/views/SearchMovie";
 import SearchComponent from "./src/views/SearchComponent";
 
 const Stack = createStackNavigator();
